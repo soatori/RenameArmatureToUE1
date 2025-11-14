@@ -12,9 +12,10 @@ For VRM/Rigify/Unknown, unmapped bones are standardized (e.g., .L/.R -> _l/_r, .
 
 # 操作步骤：选中骨骼进入编辑模式，将次脚本拖入Blender的脚本页面点击运行
 
-# 需要选中骨骼在编辑模式下运行此脚本
-# 支持骨骼类型: VRM / Rigify / Mixamo
-# 注意：Mixamo骨骼会删除 头部/手指/脚趾 的_End末端骨骼
+- 需要选中骨骼在编辑模式下运行此脚本
+- 支持骨骼类型: VRM / Rigify / Mixamo
+- 注意：Mixamo骨骼会删除 头部/手指/脚趾 的_End末端骨骼
+- 请注意原始数据版权，此脚本不对版权负责
 
 import bpy
 import re
@@ -243,4 +244,5 @@ def rename_armature_to_ue_standard_and_remove_mixamo_ends():
     print("骨骼重命名、格式统一和 Mixamo 末端骨骼删除完成。")
 
 # 执行函数
+
 rename_armature_to_ue_standard_and_remove_mixamo_ends()
